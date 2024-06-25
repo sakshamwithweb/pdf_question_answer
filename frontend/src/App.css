@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-color: rgb(252, 252, 252);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  background: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li{
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white; /* Circle background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    margin-right: 10px;
+  }
+  
+  .plus {
+    position: relative;
+    width: 10px;
+    height: 2px;
+    background-color: black; /* Plus color */
+  }
+  
+  .plus::before,
+  .plus::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: black; /* Plus color */
+  }
+  
+  .plus::before {
+    transform: rotate(90deg);
+  }
+  
+  .AddPDF{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .upload-button{
+    display: flex;
+  }
+
+  .answer-area{
+    min-height: 80vh;
+  }
+
+  .input-write input{
+    width: 80vw;
+    min-height: 5vh;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border:none;
+    background-color: rgb(240, 240, 240);
+    padding-left: 10px;
+  }
+  .input-write{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-write button{
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 5vh;
+    width: 3vw;
+    border:none;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .chat-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-message {
+    max-width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    word-wrap: break-word;
+  }
+  
+  .user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .ai {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+  }
+  
+  .input-write {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    align-items: center;
+  }
+  
+  .input-write input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-write button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
